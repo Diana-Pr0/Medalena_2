@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="МедАлена — медицинский центр для взрослых и детей в Балашихе. Анализы, стоматология, лабораторная диагностика.">
+  <title>МедАлена — медицинский центр в Балашихе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-decor page-decor--tl" aria-hidden="true"></div>
+  <div class="page-decor page-decor--br" aria-hidden="true"></div>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="МедАлена — на главную">
+        <svg class="logo__mark" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="#2F5D50" stroke-width="1.2"/>
+          <path d="M16 34V14h6c5 0 8 3 8 7.5S27 29 22 29h-2v5h-4z" fill="#2F5D50"/>
+          <path d="M20 18v8h2c2.5 0 4-1.5 4-4s-1.5-4-4-4h-2z" fill="#FAFBFA"/>
+          <path d="M14 32c2 3 4 4 6 4" stroke="#2F5D50" stroke-width="1" stroke-linecap="round"/>
+          <path d="M30 12l1.5 2.5 2.5.5-1.8 1.8.4 2.6-2.4-1.3-2.4 1.3.4-2.6-1.8-1.8 2.5-.5L30 12z" fill="#C8A97E"/>
+        </svg>
+        <span class="logo__wordmark">
+          <span class="logo__name">МедАлена</span>
+          <span class="logo__tagline">Медицинский центр</span>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="Основное меню">
+        <a href="#analyses">Анализы</a>
+        <a href="#dentistry">Стоматология</a>
+        <a href="#specialists">Специалисты</a>
+        <a href="#prices">Цены</a>
+        <a href="#promotions">Акции</a>
+        <a href="#contacts">Контакты</a>
+        <div class="nav__mobile-actions">
+          <a href="tel:+79251823718" class="nav__phone-link">+7 (925) 182-37-18</a>
+          <a href="#booking" class="btn btn--primary btn--block">Записаться</a>
+        </div>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+79251823718" class="header__phone">+7 (925) 182-37-18</a>
+        <a href="#booking" class="btn btn--primary btn--sm">Записаться</a>
+      </div>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Блок 1. Первый экран -->
+    <section class="hero">
+      <div class="hero__wave hero__wave--1" aria-hidden="true"></div>
+      <div class="hero__wave hero__wave--2" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Балашиха · ул. Твардовского, 10</p>
+          <h1 class="hero__title">Медицинский центр для взрослых и детей</h1>
+          <p class="hero__subtitle">Стоматологическая помощь и лабораторная диагностика в одном месте.</p>
+          <div class="hero__directions">
+            <a href="#analyses" class="hero-direction">
+              <span class="icon-circle" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M8 6l2 2M16 6l-2 2M6 12H3M8 16l2-2M16 16l-2-2M12 18v3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <span class="hero-direction__text"><strong>Медицинские анализы</strong><small>Забор крови взрослым и детям</small></span>
+            </a>
+            <a href="#dentistry" class="hero-direction">
+              <span class="icon-circle" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 10c0-2 2-4 4-4s4 2 4 4c0 3-1 6-4 9-3-3-4-6-4-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="hero-direction__text"><strong>Стоматология</strong><small>Лечение, протезирование, имплантация</small></span>
+            </a>
+          </div>
+          <ul class="hero__benefits">
+            <li>
+              <span class="icon-circle icon-circle--sm" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 20c0-3 2.5-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              Забор крови детям с рождения
+            </li>
+            <li>
+              <span class="icon-circle icon-circle--sm" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 10c0-2 2-4 4-4s4 2 4 4c0 2-1 4-4 7" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              Первичная консультация стоматолога бесплатно
+            </li>
+            <li>
+              <span class="icon-circle icon-circle--sm" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9h6M9 13h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              Результаты анализов онлайн
+            </li>
+          </ul>
+          <div class="hero__buttons">
+            <a href="#booking" class="btn btn--primary btn--lg">Записаться</a>
+            <a href="tel:+79251823718" class="btn btn--outline btn--lg">Позвонить</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__photo-wrap">
+            <img
+              class="hero__photo"
+              src="assets/hero-reception.png"
+              alt="Ресепшен медицинского центра МедАлена — Балашиха, ул. Твардовского, 10"
+              width="900"
+              height="675"
+              loading="eager"
+              fetchpriority="high">
+          </div>
+        </div>
+      </div>
+      <img src="assets/decor-leaves.svg" alt="" class="hero__leaves" width="160" aria-hidden="true">
+    </section>
+
+    <!-- Блок 2. Два основных направления -->
+    <section class="section directions">
+      <div class="container">
+        <div class="directions__grid">
+          <article class="direction-card">
+            <span class="icon-circle icon-circle--lg" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M8 6l2 2M16 6l-2 2M6 12H3M12 18v3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <h2>Медицинские анализы</h2>
+            <p>Забор крови взрослым и детям. Широкий спектр лабораторных исследований.</p>
+            <a href="#analyses" class="btn btn--primary">Выбрать анализы</a>
+          </article>
+          <article class="direction-card">
+            <span class="icon-circle icon-circle--lg" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 10c0-2 2-4 4-4s4 2 4 4c0 3-1 6-4 9-3-3-4-6-4-9z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <h2>Стоматология</h2>
+            <p>Диагностика, лечение, удаление, протезирование и имплантация.</p>
+            <a href="#dentistry" class="btn btn--primary">Записаться к стоматологу</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 3. Почему выбирают МедАлену -->
+    <section class="section why">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <div class="section-head__lines" aria-hidden="true"><span></span><span class="section-head__leaf"></span><span></span></div>
+          <h2 class="section__title">Заботимся о главном — о вашем здоровье</h2>
+          <p class="section__lead">Почему выбирают МедАлену</p>
+        </header>
+        <div class="why__grid">
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M6 20c0-3 2.5-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <h3>Работаем с детьми с рождения</h3>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M8 10c0-2 2-4 4-4s4 2 4 4c0 2-1 4-4 7" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <h3>Бесплатная консультация стоматолога</h3>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 21s6-4.5 6-10a6 6 0 10-12 0c0 5.5 6 10 6 10z" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="11" r="2" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <h3>Удобное расположение</h3>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 3v2M15 3v2M6 8h12M7 8l1 12h8l1-12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Современное оборудование</h3>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M9 9h6M9 13h4" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <h3>Понятный план лечения</h3>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 20s-6-4-6-9a6 6 0 1112 0c0 5-6 9-6 9z" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <h3>Внимательное отношение к пациентам</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 4. Медицинские анализы -->
+    <section class="section analyses" id="analyses">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section__title">Лабораторная диагностика</h2>
+          <div class="section-head__line" aria-hidden="true"></div>
+        </header>
+        <p class="section__lead">Полный спектр медицинских анализов для взрослых и детей.</p>
+        <ul class="analyses__list">
+          <li>Общеклинические анализы</li>
+          <li>Биохимия</li>
+          <li>Гормоны</li>
+          <li>Витамины и микроэлементы</li>
+          <li>Инфекции</li>
+          <li>Аллергология</li>
+          <li>Комплексные программы обследования</li>
+        </ul>
+        <a href="#prices" class="btn btn--primary">Смотреть полный прайс</a>
+      </div>
+    </section>
+
+    <!-- Блок 5. Забор крови детям -->
+    <section class="section children">
+      <div class="container children__inner">
+        <div class="children__photo" role="img" aria-label="Елена Александровна — медсестра"></div>
+        <div class="children__content">
+          <span class="badge">Забор крови</span>
+          <h2>Бережный подход к самым маленьким пациентам</h2>
+          <p class="children__highlight">Забор крови детям с рождения.</p>
+          <p>Спокойная атмосфера и опыт работы более 30 лет.</p>
+          <a href="#booking" class="btn btn--primary btn--lg">Записать ребёнка</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 6. Стоматология -->
+    <section class="section dentistry" id="dentistry">
+      <div class="container">
+        <h2 class="section__title">Современная стоматология</h2>
+        <div class="services__grid">
+          <article class="service-card"><h3>Лечение кариеса</h3></article>
+          <article class="service-card"><h3>Профессиональная гигиена</h3></article>
+          <article class="service-card"><h3>Удаление зубов</h3></article>
+          <article class="service-card"><h3>Зубы мудрости</h3></article>
+          <article class="service-card"><h3>Протезирование</h3></article>
+          <article class="service-card"><h3>Имплантация</h3></article>
+          <article class="service-card service-card--wide"><h3>Эстетическая реставрация</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 7. Калькулятор стоимости -->
+    <section class="section calculator" id="prices">
+      <div class="container">
+        <h2 class="section__title">Узнайте предварительную стоимость лечения</h2>
+        <div class="calculator__box">
+          <form class="calculator__form" id="calcForm">
+            <label>
+              <span>Услуга</span>
+              <select name="service" id="calcService">
+                <option value="consult">Консультация стоматолога</option>
+                <option value="hygiene">Профессиональная гигиена</option>
+                <option value="caries">Лечение кариеса (1 зуб)</option>
+                <option value="remove">Удаление зуба</option>
+                <option value="implant">Имплантация</option>
+                <option value="blood">Забор крови (ребёнок)</option>
+                <option value="complex">Комплекс анализов</option>
+              </select>
+            </label>
+            <label>
+              <span>Количество</span>
+              <input type="number" name="qty" id="calcQty" min="1" max="10" value="1">
+            </label>
+            <div class="calculator__result">
+              <span>Предварительная стоимость:</span>
+              <strong id="calcTotal">0 ₽</strong>
+            </div>
+          </form>
+          <p class="calculator__note">Окончательная стоимость определяется врачом после осмотра.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 8. Акции -->
+    <section class="section promotions" id="promotions">
+      <div class="container">
+        <h2 class="section__title">Акции</h2>
+        <div class="promotions__grid">
+          <article class="promo-card">
+            <span class="promo-card__tag">Акция</span>
+            <h3>Бесплатная консультация стоматолога</h3>
+            <p>Первичный приём и осмотр — без оплаты для новых пациентов.</p>
+          </article>
+          <article class="promo-card">
+            <span class="promo-card__tag">Скидка</span>
+            <h3>Скидка на комплексную диагностику</h3>
+            <p>Выгодные программы обследования для взрослых и детей.</p>
+          </article>
+          <article class="promo-card">
+            <span class="promo-card__tag">Семья</span>
+            <h3>Семейные предложения</h3>
+            <p>Специальные условия при посещении клиники всей семьёй.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 9. Специалисты -->
+    <section class="section specialists" id="specialists">
+      <div class="container">
+        <h2 class="section__title">Наши специалисты</h2>
+        <div class="specialists__grid">
+          <article class="specialist-card">
+            <div class="specialist-card__avatar specialist-card__avatar--1" aria-hidden="true"></div>
+            <h3>Диана Приходько</h3>
+            <p>Медсестра универсал<br>Нутрициолог</p>
+          </article>
+          <article class="specialist-card">
+            <div class="specialist-card__avatar specialist-card__avatar--2" aria-hidden="true"></div>
+            <h3>Елена Приходько</h3>
+            <p>Медсестра универсал<br><em>Стаж более 30 лет</em></p>
+          </article>
+          <article class="specialist-card">
+            <div class="specialist-card__avatar specialist-card__avatar--3" aria-hidden="true"></div>
+            <h3>Некруз Одинамамадов</h3>
+            <p>Врач-стоматолог</p>
+          </article>
+          <article class="specialist-card">
+            <div class="specialist-card__avatar specialist-card__avatar--4" aria-hidden="true"></div>
+            <h3>Абдулазиз Саидов</h3>
+            <p>Врач-стоматолог</p>
+          </article>
+        </div>
+        <a href="#specialists" class="btn btn--outline">Подробнее о специалистах</a>
+      </div>
+    </section>
+
+    <!-- Блок 10. Как проходит визит -->
+    <section class="section visit">
+      <div class="visit__wave" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center">
+          <div class="section-head__lines" aria-hidden="true"><span></span><span class="section-head__leaf"></span><span></span></div>
+          <h2 class="section__title">Как проходит визит</h2>
+        </header>
+        <ol class="visit__steps">
+          <li>
+            <span class="visit__num">1</span>
+            <p>Вы оставляете заявку</p>
+          </li>
+          <li>
+            <span class="visit__num">2</span>
+            <p>Мы связываемся с вами</p>
+          </li>
+          <li>
+            <span class="visit__num">3</span>
+            <p>Подбираем удобное время</p>
+          </li>
+          <li>
+            <span class="visit__num">4</span>
+            <p>Приходите в клинику</p>
+          </li>
+          <li>
+            <span class="visit__num">5</span>
+            <p>Получаете результат или план лечения</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Блок 11. Отзывы -->
+    <section class="section reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы пациентов</h2>
+        <div class="reviews__layout">
+          <div class="reviews__videos">
+            <h3 class="reviews__subtitle">Видеоотзывы</h3>
+            <div class="video-placeholder">
+              <span>▶</span>
+              <p>Видеоотзыв пациента</p>
+            </div>
+            <div class="video-placeholder">
+              <span>▶</span>
+              <p>Видеоотзыв пациента</p>
+            </div>
+          </div>
+          <div class="reviews__text">
+            <h3 class="reviews__subtitle">Текстовые отзывы</h3>
+            <blockquote class="review-quote">
+              <p>«Очень внимательный персонал, ребёнок спокойно сдал кровь. Рекомендую!»</p>
+              <cite>— Мария, пациент</cite>
+            </blockquote>
+            <blockquote class="review-quote">
+              <p>«Прошла бесплатную консультацию, всё объяснили понятно. Записалась на лечение.»</p>
+              <cite>— Анна, пациент</cite>
+            </blockquote>
+          </div>
+          <aside class="reviews__rating">
+            <a href="https://yandex.ru/maps/org/medalena/153752063920/" target="_blank" rel="noopener" class="yandex-badge">
+              <span class="yandex-badge__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21s-6-4.35-6-10a6 6 0 1112 0c0 5.65-6 10-6 10z" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </span>
+              <div class="yandex-badge__body">
+                <strong>Яндекс.Карты</strong>
+                <div class="yandex-badge__stars" aria-label="Рейтинг 5 из 5">
+                  <svg class="yandex-star" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 4.8 5.3.5-4 3.5 1.2 5.2L10 13.4l-4.7 2.1 1.2-5.2-4-3.5 5.3-.5L10 1.5z" fill="currentColor"/></svg>
+                  <svg class="yandex-star" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 4.8 5.3.5-4 3.5 1.2 5.2L10 13.4l-4.7 2.1 1.2-5.2-4-3.5 5.3-.5L10 1.5z" fill="currentColor"/></svg>
+                  <svg class="yandex-star" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 4.8 5.3.5-4 3.5 1.2 5.2L10 13.4l-4.7 2.1 1.2-5.2-4-3.5 5.3-.5L10 1.5z" fill="currentColor"/></svg>
+                  <svg class="yandex-star" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 4.8 5.3.5-4 3.5 1.2 5.2L10 13.4l-4.7 2.1 1.2-5.2-4-3.5 5.3-.5L10 1.5z" fill="currentColor"/></svg>
+                  <svg class="yandex-star" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 4.8 5.3.5-4 3.5 1.2 5.2L10 13.4l-4.7 2.1 1.2-5.2-4-3.5 5.3-.5L10 1.5z" fill="currentColor"/></svg>
+                </div>
+                <p class="yandex-badge__score">5 из 5</p>
+              </div>
+            </a>
+            <div class="good-place">
+              <span>✓</span>
+              <p>Хорошее место</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 12. FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <h2 class="section__title">Частые вопросы</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Нужно ли записываться заранее?</summary>
+            <p>Да, рекомендуем записаться заранее по телефону или через форму на сайте — так мы подберём удобное время без ожидания.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Когда будут готовы анализы?</summary>
+            <p>Сроки зависят от вида исследования. Большинство результатов доступны онлайн в течение 1–3 рабочих дней.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли сдавать кровь ребёнку?</summary>
+            <p>Да, мы проводим забор крови детям с рождения в спокойной обстановке с опытными медсёстрами.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Бесплатна ли консультация стоматолога?</summary>
+            <p>Первичная консультация стоматолога для новых пациентов проводится бесплатно.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Какие способы оплаты доступны?</summary>
+            <p>Наличные, банковские карты и безналичный расчёт. Уточняйте детали у администратора.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 13. Онлайн-запись -->
+    <section class="section booking" id="booking">
+      <div class="container">
+        <h2 class="section__title">Онлайн-запись</h2>
+        <p class="section__lead">Выберите удобное время — мы перезвоним для подтверждения.</p>
+        <form class="booking__form" action="#" method="post">
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" required placeholder="Ваше имя">
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+          <label>
+            <span>Направление</span>
+            <select name="direction" required>
+              <option value="">Выберите направление</option>
+              <option value="analyses">Анализы</option>
+              <option value="dentistry">Стоматология</option>
+            </select>
+          </label>
+          <label>
+            <span>Специалист</span>
+            <select name="specialist">
+              <option value="">Любой свободный</option>
+              <option value="diana">Диана Приходько</option>
+              <option value="elena">Елена Приходько</option>
+              <option value="nekruz">Некруз Одинамамадов</option>
+              <option value="abdulaziz">Абдулазиз Саидов</option>
+            </select>
+          </label>
+          <label>
+            <span>Дата</span>
+            <input type="date" name="date" required>
+          </label>
+          <label>
+            <span>Время</span>
+            <input type="time" name="time" required>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg booking__submit">Записаться</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Блок 14. Контакты -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__info">
+          <h2 class="section__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li>
+              <span class="icon-circle icon-circle--sm" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s6-4.5 6-10a6 6 0 10-12 0c0 5.5 6 10 6 10z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="11" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <div>
+                <strong>Адрес</strong>
+                <p>Балашиха, ул. Твардовского, д. 10</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-circle icon-circle--sm" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 4h4l2 5-2 1a12 12 0 004 4l1-2 5 2v4c0 1-1 2-2 2C9 20 4 15 4 8c0-1 1-2 2-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Телефон</strong>
+                <p><a href="tel:+79251823718">+7 (925) 182-37-18</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contacts__icon contacts__icon--max">MAX</span>
+              <div>
+                <strong>Мессенджер</strong>
+                <p>Напишите нам в MAX</p>
+              </div>
+            </li>
+          </ul>
+          <a href="https://yandex.ru/maps/org/medalena/153752063920/" target="_blank" rel="noopener" class="btn btn--primary">Построить маршрут</a>
+        </div>
+        <div class="contacts__map" aria-label="ООО МедАлена на карте — Балашиха, ул. Твардовского, 10">
+          <iframe
+            title="ООО МедАлена — Яндекс Карты"
+            src="https://yandex.ru/map-widget/v1/?oid=153752063920&z=16&lang=ru_RU"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">© 2026 ООО «МедАлена»</p>
+      <a href="#top" class="footer__logo" aria-label="МедАлена">
+        <span class="logo__name">МедАлена</span>
+        <span class="logo__tagline">Медицинский центр</span>
+      </a>
+      <nav class="footer__nav" aria-label="Юридическая информация">
+        <a href="#">Лицензия</a>
+        <a href="#">Сведения о медицинской организации</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Согласие на обработку персональных данных</a>
+        <a href="#">Пользовательское соглашение</a>
+        <a href="#">Реквизиты ООО «МедАлена»</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" aria-label="Быстрые действия">
+    <a href="tel:+79251823718" class="mobile-bar__btn mobile-bar__btn--call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h4l2 5-2 1a12 12 0 004 4l1-2 5 2v4c0 1-1 2-2 2C9 20 4 15 4 8c0-1 1-2 2-4z" stroke="currentColor" stroke-width="1.5"/></svg>
+      Позвонить
+    </a>
+    <a href="#booking" class="mobile-bar__btn mobile-bar__btn--book">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 3v2M16 3v2M4 10h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Записаться
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      var prices = {
+        consult: 0,
+        hygiene: 4500,
+        caries: 3500,
+        remove: 2500,
+        implant: 45000,
+        blood: 350,
+        complex: 8900
+      };
+
+      var calcTotalEl = document.getElementById('calcTotal');
+
+      function updateCalc() {
+        var service = document.getElementById('calcService').value;
+        var qty = parseInt(document.getElementById('calcQty').value, 10) || 1;
+        var total = (prices[service] || 0) * qty;
+        calcTotalEl.textContent =
+          total === 0 ? 'Бесплатно' : total.toLocaleString('ru-RU') + ' ₽';
+        calcTotalEl.classList.remove('calc-bump');
+        void calcTotalEl.offsetWidth;
+        calcTotalEl.classList.add('calc-bump');
+      }
+
+      document.getElementById('calcService').addEventListener('change', updateCalc);
+      document.getElementById('calcQty').addEventListener('input', updateCalc);
+      updateCalc();
+
+      var burger = document.querySelector('.burger');
+      var nav = document.getElementById('mainNav');
+      var navOverlay = document.getElementById('navOverlay');
+      var body = document.body;
+
+      function setMenuOpen(open) {
+        nav.classList.toggle('nav--open', open);
+        navOverlay.classList.toggle('nav-overlay--visible', open);
+        burger.setAttribute('aria-expanded', open);
+        navOverlay.setAttribute('aria-hidden', !open);
+        body.classList.toggle('menu-open', open);
+      }
+
+      burger.addEventListener('click', function () {
+        setMenuOpen(!nav.classList.contains('nav--open'));
+      });
+
+      navOverlay.addEventListener('click', function () {
+        setMenuOpen(false);
+      });
+
+      document.querySelectorAll('.nav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setMenuOpen(false);
+        });
+      });
+
+      document.querySelectorAll('.mobile-bar__btn--book').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setMenuOpen(false);
+        });
+      });
+
+      document.querySelector('.booking__form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Заявка отправлена! Мы свяжемся с вами для подтверждения записи.');
+      });
+
+      var header = document.querySelector('.header');
+      var root = document.documentElement;
+
+      function updateHeaderOnScroll() {
+        var scrolled = window.scrollY > 16;
+        header.classList.toggle('header--scrolled', scrolled);
+        if (window.innerWidth > 768) {
+          root.style.setProperty('--header-h', scrolled ? '64px' : '72px');
+        } else {
+          root.style.removeProperty('--header-h');
+        }
+      }
+
+      window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+      window.addEventListener('resize', updateHeaderOnScroll, { passive: true });
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        var revealSelector = [
+          '.direction-card',
+          '.why-card',
+          '.section-head',
+          '.analyses__list li',
+          '.children__photo',
+          '.children__content',
+          '.service-card',
+          '.calculator__box',
+          '.promo-card',
+          '.specialist-card',
+          '.visit__steps li',
+          '.video-placeholder',
+          '.review-quote',
+          '.yandex-badge',
+          '.good-place',
+          '.faq__item',
+          '.booking__form',
+          '.contacts__info',
+          '.contacts__map'
+        ].join(', ');
+
+        var revealItems = document.querySelectorAll(revealSelector);
+        revealItems.forEach(function (el, index) {
+          el.classList.add('reveal');
+          if (el.classList.contains('children__photo') || el.classList.contains('contacts__map')) {
+            el.classList.add('reveal--from-right');
+          }
+          if (el.classList.contains('children__content') || el.classList.contains('contacts__info')) {
+            el.classList.add('reveal--from-left');
+          }
+          if (el.classList.contains('specialist-card') || el.classList.contains('promo-card')) {
+            el.classList.add('reveal--scale');
+          }
+          var group = el.parentElement;
+          var siblings = group ? Array.prototype.indexOf.call(group.children, el) : index;
+          el.style.setProperty('--reveal-delay', (siblings % 5) * 0.09 + 's');
+        });
+
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal--visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+        revealItems.forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
