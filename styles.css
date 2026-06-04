@@ -481,8 +481,49 @@ a:hover {
   font-size: clamp(32px, 4.5vw, 48px);
   font-weight: 600;
   line-height: 1.15;
-  color: var(--color-primary);
   letter-spacing: -0.01em;
+}
+
+/* Shiny text — аналог эффекта Motion (брендовые цвета) */
+.shiny-text {
+  display: inline;
+  background-image: linear-gradient(
+    120deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary) 32%,
+    #e8dcc8 48%,
+    var(--color-accent) 50%,
+    #e8dcc8 52%,
+    var(--color-primary) 68%,
+    var(--color-primary-dark) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny-text-sweep 2.5s ease-in-out infinite;
+}
+
+@keyframes shiny-text-sweep {
+  0% {
+    background-position: 150% center;
+  }
+  55% {
+    background-position: -50% center;
+  }
+  55.01%,
+  100% {
+    background-position: 150% center;
+  }
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .shiny-text {
+    -webkit-text-fill-color: inherit;
+    color: var(--color-primary);
+    background: none;
+    animation: none;
+  }
 }
 
 .hero__subtitle {
@@ -573,12 +614,52 @@ a:hover {
   align-items: center;
 }
 
-.hero__photo-wrap {
+.hero__photo-frame {
   position: relative;
   z-index: 1;
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
+  padding: 14px;
+  background: linear-gradient(160deg, var(--color-white) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(200, 169, 126, 0.45);
+  box-shadow: var(--shadow-md);
+}
+
+.hero__photo-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  border-radius: 0 0 4px 4px;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.hero__photo-wrap {
+  position: relative;
+  border-radius: calc(var(--radius-lg) - 10px);
+  overflow: hidden;
+  background: var(--color-primary-light);
+}
+
+.hero__photo-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    165deg,
+    rgba(47, 93, 80, 0.12) 0%,
+    transparent 35%,
+    transparent 65%,
+    rgba(200, 169, 126, 0.08) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero__photo {
@@ -586,10 +667,15 @@ a:hover {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-  object-position: center;
-  border-radius: 55% 45% 50% 50% / 48% 52% 48% 52%;
-  box-shadow: var(--shadow-lg);
-  animation: photo-float 7s ease-in-out infinite;
+  object-position: center 42%;
+  border-radius: 0;
+  box-shadow: none;
+  filter: saturate(0.9) contrast(1.03) brightness(1.02);
+  transition: transform 0.6s var(--ease-smooth);
+}
+
+.hero__photo-frame:hover .hero__photo {
+  transform: scale(1.02);
 }
 
 .hero__leaves {
@@ -1612,6 +1698,7 @@ a:hover {
 @media (prefers-reduced-motion: no-preference) {
   .hero__eyebrow { animation: fade-up 0.75s 0.05s var(--ease-smooth) both; }
   .hero__title { animation: fade-up 0.85s 0.15s var(--ease-smooth) both; }
+  .hero__title .shiny-text { animation: shiny-text-sweep 2.5s ease-in-out 0.6s infinite; }
   .hero__subtitle { animation: fade-up 0.85s 0.25s var(--ease-smooth) both; }
   .hero__directions { animation: fade-up 0.85s 0.35s var(--ease-smooth) both; }
   .hero__benefits { animation: fade-up 0.85s 0.45s var(--ease-smooth) both; }
@@ -1722,6 +1809,12 @@ a:hover {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .shiny-text {
+    -webkit-text-fill-color: inherit;
+    color: var(--color-primary);
+    background: none;
   }
 
   .reveal {
@@ -1980,14 +2073,18 @@ body.menu-open {
     order: -1;
   }
 
-  .hero__photo-wrap {
+  .hero__photo-frame {
     max-width: 100%;
+    padding: 10px;
   }
 
   .hero__photo {
     aspect-ratio: 16/10;
-    border-radius: var(--radius-lg);
-    animation: none;
+    object-position: center center;
+  }
+
+  .hero__photo-frame:hover .hero__photo {
+    transform: none;
   }
 
   .hero__leaves,
@@ -2316,10 +2413,6 @@ body.menu-open {
 @media (hover: none) and (pointer: coarse) {
   .btn::before {
     display: none;
-  }
-
-  .hero__photo {
-    animation: none;
   }
 
   .page-decor--tl,
